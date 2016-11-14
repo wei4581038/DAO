@@ -1,13 +1,22 @@
 package cn.zhujie;
 
+@Table("user")
 public class Filter {
 
+	@Column("id")
 	private int id;
+	@Column("userName")
 	private String userName;
+	@Column("nickName")
 	private String nickName;
+	@Column("age")
 	private int age;
+	@Column("city")
 	private String city;
-	
+	@Column("email")
+	private String email;
+	@Column("mobile")
+	private String mobile;
 	
 	public Filter() {
 		
@@ -54,6 +63,5 @@ public class Filter {
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
-	private String email;
-	private String mobile;
+	
 }
